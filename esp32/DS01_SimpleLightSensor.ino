@@ -7,7 +7,7 @@
 void setup(){
  Serial.begin(115200);
  pinMode(2,INPUT_PULLUP);
- delay(5000);
+ delay(3000);
  Serial.println("program DS01");
  Serial.println("Simple Light Sensor");
  Serial.println("modified for esp32"); 
@@ -18,6 +18,6 @@ void loop(){
  int d = digitalRead(2);  
  Serial.print("ค่าของแสงเป็น"+(String)d);
  Serial.println();
- delay(300);
+ delay(1000);
   
 }
